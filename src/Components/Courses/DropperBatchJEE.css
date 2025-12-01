@@ -1,0 +1,175 @@
+/* ========= JEE DROPPER BATCH PAGE STYLING ========= */
+
+.jee-dropper-container {
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #0b0b0f, #121212);
+  color: #dcdcdc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 20px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ======= Headings ======= */
+.jee-dropper-title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.jee-dropper-subtitle {
+  color: #aaaaaa;
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin-bottom: 50px;
+  line-height: 1.6;
+}
+
+/* ======= Card ======= */
+.jee-dropper-cards {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 700px;
+  margin-bottom: 60px;
+}
+
+.jee-dropper-card {
+  background: #1a1a1d;
+  border: 1px solid #2b2b2f;
+  border-radius: 18px;
+  padding: 35px 25px;
+  transition: all 0.4s ease;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.05);
+  width: 100%;
+}
+
+.jee-dropper-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 4px 20px rgba(74, 170, 255, 0.25);
+  border-color: #4aaaff;
+}
+
+.jee-dropper-card h2 {
+  font-size: 1.2rem;
+  color: #fff;
+  margin: 10px 0;
+}
+
+.jee-dropper-card p {
+  font-size: 0.95rem;
+  color: #bbbbbb;
+  line-height: 1.6;
+}
+
+/* ======= Duration & Note Styling ======= */
+.duration {
+  margin-top: 15px;
+  font-weight: 500;
+  color: #cccccc;
+  font-size: 0.95rem;
+}
+
+.duration span {
+  color: #4aaaff;
+  font-weight: 600;
+}
+
+.note {
+  margin-top: 10px;
+  font-weight: 500;
+  color: #ffb347;
+  font-size: 0.95rem;
+}
+
+/* ======= Icons ======= */
+.jee-dropper-icon {
+  width: 55px;
+  height: 55px;
+  margin-bottom: 15px;
+}
+
+.blue {
+  color: #4aaaff;
+}
+
+/* ======= Footer Section ======= */
+.jee-dropper-footer {
+  max-width: 800px;
+  text-align: center;
+}
+
+.jee-dropper-footer p {
+  color: #cccccc;
+  margin-bottom: 30px;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.join-btn {
+  background: #4aaaff;
+  color: #fff;
+  border: none;
+  padding: 15px 40px;
+  font-size: 1.1rem;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.join-btn:hover {
+  background: #69bbff;
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(74, 170, 255, 0.4);
+}
+
+/* ========= RESPONSIVE DESIGN ========= */
+@media (max-width: 1024px) {
+  .jee-dropper-title {
+    font-size: 2.1rem;
+  }
+
+  .jee-dropper-subtitle {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .jee-dropper-title {
+    font-size: 1.8rem;
+  }
+
+  .jee-dropper-subtitle {
+    font-size: 0.95rem;
+  }
+
+  .jee-dropper-card {
+    padding: 30px 20px;
+  }
+
+  .join-btn {
+    font-size: 1rem;
+    padding: 13px 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .jee-dropper-title {
+    font-size: 1.5rem;
+  }
+
+  .jee-dropper-subtitle {
+    font-size: 0.9rem;
+  }
+
+  .jee-dropper-card h2 {
+    font-size: 1.1rem;
+  }
+
+  .jee-dropper-card p {
+    font-size: 0.9rem;
+  }
+}

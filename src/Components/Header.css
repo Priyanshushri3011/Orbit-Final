@@ -1,0 +1,47 @@
+.header {
+    width: 100%;
+    padding: 0.7rem 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 20;
+}
+
+.header-left h2 {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: var(--white);
+}
+
+.header-left p {
+    font-size: 0.8rem;
+    color: #ddd;
+    letter-spacing: 1px;
+}
+
+.header-right {
+    display: flex;
+    gap: 1rem;
+}
+
+.header-right svg {
+    color: var(--white);
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.header-right svg:hover {
+    color: var(--primary);
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+        gap: 0.5rem;
+    }
+}

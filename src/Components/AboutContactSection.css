@@ -1,0 +1,196 @@
+/* 🌈 Overall Section */
+.about-contact {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 5rem 8%;
+  gap: 4rem;
+  background: radial-gradient(circle at top left, #111 0%, #000 100%);
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+/* ✨ Background Glow Effects */
+.about-contact::before,
+.about-contact::after {
+  content: "";
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #00ffc8 0%, transparent 70%);
+  opacity: 0.15;
+  z-index: 0;
+  animation: float 10s infinite ease-in-out alternate;
+}
+
+.about-contact::before {
+  top: -50px;
+  left: -50px;
+}
+.about-contact::after {
+  bottom: -60px;
+  right: -60px;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(40px);
+  }
+}
+
+/* 📸 Left Image */
+.contact-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  z-index: 1;
+}
+
+.contact-image img {
+  width: 100%;
+  max-width: 480px;
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0, 255, 200, 0.2);
+  transition: all 0.6s ease;
+}
+
+.contact-image img:hover {
+  transform: scale(1.05) rotate(-2deg);
+  box-shadow: 0 25px 60px rgba(0, 255, 200, 0.3);
+}
+
+/* 📝 Contact Form Box */
+.contact-side {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  padding: 3rem 2.5rem;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
+  position: relative;
+  z-index: 1;
+  transition: transform 0.3s ease;
+}
+
+.contact-side:hover {
+  transform: translateY(-5px);
+}
+
+.contact-side h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  background: linear-gradient(90deg, #00ffc8, #00bfff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.subtitle {
+  color: #aaa;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+/* 🧩 Form Fields */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+input,
+textarea {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.07);
+  border: none;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.15);
+  color: #fff;
+  font-size: 1rem;
+  padding: 0.9rem 0.5rem;
+  border-radius: 6px;
+  transition: border-color 0.3s, transform 0.2s;
+}
+
+input:focus,
+textarea:focus {
+  background: rgba(255, 255, 255, 0.1);
+  border-bottom: 2px solid var(--primary, #00ffc8);
+  outline: none;
+  transform: translateY(-2px);
+}
+
+textarea {
+  resize: none;
+  min-height: 100px;
+}
+
+/* 💫 Submit Button */
+.contact-btn {
+  margin-top: 0.5rem;
+  background: linear-gradient(90deg, #00ffc8, #00bfff);
+  color: #000;
+  font-weight: 700;
+  padding: 0.9rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  letter-spacing: 0.6px;
+  transition: all 0.4s ease;
+  text-transform: uppercase;
+  box-shadow: 0 5px 15px rgba(0, 255, 200, 0.25);
+}
+
+.contact-btn:hover {
+  background: linear-gradient(90deg, #00bfff, #00ffc8);
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(0, 255, 200, 0.4);
+}
+
+/* 📱 Responsive Design */
+@media (max-width: 992px) {
+  .about-contact {
+    flex-direction: column;
+    text-align: center;
+    padding: 4rem 6%;
+  }
+
+  .contact-image img {
+    max-width: 85%;
+  }
+
+  .contact-side {
+    width: 100%;
+    max-width: 600px;
+  }
+}
+
+@media (max-width: 576px) {
+  .about-contact {
+    padding: 3rem 5%;
+  }
+
+  .contact-side {
+    padding: 2rem 1.5rem;
+  }
+
+  .contact-side h2 {
+    font-size: 1.8rem;
+  }
+
+  input,
+  textarea {
+    font-size: 0.95rem;
+  }
+
+  .contact-btn {
+    font-size: 0.9rem;
+  }
+}

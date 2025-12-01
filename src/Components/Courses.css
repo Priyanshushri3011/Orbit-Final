@@ -1,0 +1,136 @@
+/* ================================
+   COURSES SECTION
+   ================================ */
+.course-section {
+    background: linear-gradient(#1D283A 0%, #0f172a 20%, #1e293b 100%);
+
+    color: #f8fafc;
+    text-align: center;
+    padding: 90px 20px;
+    font-family: "Poppins", sans-serif;
+    overflow: hidden;
+}
+
+/* glowing accent background shapes */
+/* Heading */
+.course-heading {
+    font-size: 2.8rem;
+    color: #14f1c8;
+    font-weight: 700;
+    margin-bottom: 60px;
+    position: relative;
+    z-index: 2;
+}
+
+/* Grid Layout */
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
+    gap: 35px;
+    max-width: 1150px;
+    margin: 0 auto;
+    z-index: 2;
+}
+
+/* Card Styles */
+.course-card {
+    background: linear-gradient(145deg, #1e293b, #0f172a);
+    border: 1px solid rgba(20, 241, 200, 0.15);
+    border-radius: 16px;
+    box-shadow: 0 0 25px rgba(20, 241, 200, 0.05);
+    transition: all 0.35s ease;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 25px;
+    height: 100%;
+}
+
+.course-card:hover {
+    transform: translateY(-8px);
+    border-color: rgba(20, 241, 200, 0.4);
+    box-shadow: 0 0 30px rgba(20, 241, 200, 0.2);
+}
+
+/* Course Content */
+.course-content {
+    text-align: center;
+}
+
+.course-content h3 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #14f1c8;
+    margin-bottom: 10px;
+}
+
+.course-content p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #e2e8f0;
+    margin-bottom: 25px;
+    min-height: 70px;
+}
+
+/* Explore Button */
+.explore-btn {
+    background: linear-gradient(90deg, #14f1c8, #06b6d4);
+    border: none;
+    color: #0f172a;
+    font-weight: 600;
+    font-size: 0.95rem;
+    padding: 10px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.explore-btn:hover {
+    background: linear-gradient(90deg, #06b6d4, #14f1c8);
+    transform: scale(1.05);
+    box-shadow: 0 0 12px rgba(20, 241, 200, 0.4);
+}
+
+/* ================================
+   RESPONSIVE DESIGN
+   ================================ */
+@media (max-width: 1024px) {
+    .course-heading {
+        font-size: 2.3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .course-section {
+        padding: 70px 15px;
+    }
+
+    .course-heading {
+        font-size: 2rem;
+        margin-bottom: 40px;
+    }
+
+    .course-card {
+        padding: 30px 20px;
+    }
+
+    .course-content h3 {
+        font-size: 1.2rem;
+    }
+
+    .course-content p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .course-heading {
+        font-size: 1.8rem;
+    }
+
+    .explore-btn {
+        font-size: 0.85rem;
+        padding: 8px 18px;
+    }
+}
