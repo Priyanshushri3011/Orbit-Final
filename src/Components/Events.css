@@ -1,0 +1,99 @@
+/* ===== EVENTS PAGE LAYOUT ===== */
+
+.events-container {
+  min-height: 100vh;
+  padding: 60px 20px;
+  text-align: center;
+  background: linear-gradient(to bottom, #0b0b0f, #121212);
+  font-family: "Poppins", sans-serif;
+  color: #e6e6e6;
+}
+
+.events-title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.events-subtitle {
+  max-width: 700px;
+  margin: 12px auto 50px auto;
+  color: #bbbbbb;
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+/* ===== EVENTS GRID ===== */
+
+.events-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  padding: 10px;
+}
+
+/* ===== SINGLE EVENT CARD ===== */
+
+.event-card {
+  background: #1a1a1f;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: all 0.35s ease;
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.05);
+}
+
+.event-card:hover {
+  transform: translateY(-8px);
+  border-color: #7c4dff;
+  box-shadow: 0px 6px 22px rgba(124, 77, 255, 0.25);
+}
+
+/* ===== EVENT IMAGE ===== */
+
+.event-image {
+  width: 100%;
+  height: 210px;
+  overflow: hidden;
+}
+
+.event-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.event-card:hover .event-image img {
+  transform: scale(1.08);
+}
+
+/* ===== EVENT CONTENT ===== */
+
+.event-content {
+  padding: 18px 20px;
+  text-align: left;
+}
+
+.event-content h2 {
+  font-size: 1.2rem;
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+
+.event-content p {
+  font-size: 0.95rem;
+  color: #cfcfcf;
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media (max-width: 480px) {
+  .events-title {
+    font-size: 1.8rem;
+  }
+
+  .event-content h2 {
+    font-size: 1.1rem;
+  }
+}

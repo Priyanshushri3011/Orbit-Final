@@ -1,0 +1,103 @@
+/* ========= TEST SERIES PAGE STYLING ========= */
+
+.dropper-container {
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #0b0b0f, #121212);
+  color: #e6e6e6;
+  padding: 60px 20px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.dropper-header h1 {
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.dropper-header p {
+  margin-top: 10px;
+  font-size: 1.1rem;
+  color: #bbbbbb;
+}
+
+.dropper-note {
+  margin-top: 18px;
+  background: rgba(255, 255, 255, 0.07);
+  padding: 12px 18px;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+.dropper-note p {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #ffe082;
+}
+
+.dropper-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.dropper-card {
+  background: #1a1a1f;
+  padding: 25px;
+  width: 320px;
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: 0.3s ease;
+  text-align: center;
+}
+
+.dropper-card:hover {
+  transform: translateY(-6px);
+  border-color: #ffb74d;
+  box-shadow: 0 0 14px rgba(255, 183, 77, 0.3);
+}
+
+.dropper-icon {
+  font-size: 3rem;
+  color: #ffb74d;
+  margin-bottom: 15px;
+}
+
+.dropper-card h2 {
+  font-size: 1.4rem;
+  color: #ffffff;
+  margin-bottom: 12px;
+}
+
+.dropper-card p {
+  font-size: 0.95rem;
+  color: #cccccc;
+}
+
+.dropper-duration {
+  margin-top: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.dropper-duration-icon {
+  font-size: 1.2rem;
+  color: #ffb74d;
+}
+
+/* ======= MOBILE RESPONSIVE ======= */
+
+@media (max-width: 480px) {
+  .dropper-header h1 {
+    font-size: 1.8rem;
+  }
+
+  .dropper-card {
+    width: 90%;
+  }
+}

@@ -23,16 +23,19 @@ function Courses() {
         "Specialized batch for NEET & JEE droppers focusing on speed, accuracy, and exam-oriented strategy.",
     },
     {
+      link: './ndatargetbatch',
       title: "Target Batch for NDA",
       description:
         "Focused preparation for NDA aspirants with academic and personality development support.",
     },
     {
+      link:'./crashcourse',
       title: "Crash Course",
       description:
         "Fast-track revision course with intensive practice sessions and short-cut techniques.",
     },
     {
+      link:'./testseries',
       title: "Test Series",
       description:
         "Regular tests, performance analysis, and personalized feedback to boost confidence and accuracy.",
