@@ -8,7 +8,8 @@ import VideoGallery from "./Components/Videos/VideoGallery";
 import Footer from "./Footer";
 import "./index.css";
 import "./Home.css"
-import Events from "./Components/Events";
+import Events from "./Components/Events/Events";
+import AboutUs from "./Aboutus/Aboutus";
 
 function Home() {
   return (
@@ -19,9 +20,10 @@ function Home() {
       <Courses />
       <Faculty/>
       <VideoGallery/>
+      <Events/>
       <AboutContactSection/>
       <Footer/>
-      <Events/>
+      {/* <AboutUs/> */}
     </>
   );
 }

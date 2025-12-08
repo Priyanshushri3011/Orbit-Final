@@ -1,0 +1,147 @@
+/* General Section Styles */
+.aboutus-section,
+.mission-section,
+.team-section {
+  padding: 180px 20px;
+  text-align: center;
+  background: linear-gradient(190deg, #1E293B 0%, #1e1b4b, #0f172a 100%);
+  color: #f8fafc; /* light text */
+}
+
+.aboutus-section h1,
+.mission-section h2,
+.team-section h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #a78bfa; /* purple headings */
+}
+
+.aboutus-section p,
+.mission-section p {
+  font-size:1.5rem;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+  color: #dbeafe; /* light blue/gray text */
+}
+
+/* Team Cards Section */
+.team-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.team-card {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 20px;
+  border-radius: 12px;
+  width: 280px;
+  text-align: center;
+  color: #e2e8f0; /* card text */
+  border: 1px solid rgba(167, 139, 250, 0.25);
+  box-shadow: 0 0 25px rgba(167, 139, 250, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-10px);
+  border-color: rgba(167, 139, 250, 0.45);
+  box-shadow: 0 0 35px rgba(167, 139, 250, 0.25);
+}
+
+.team-photo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border: 2px solid rgba(167, 139, 250, 0.5); /* subtle purple border */
+}
+
+/* Responsive Styles */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .aboutus-section h1,
+  .mission-section h2,
+  .team-section h2 {
+    font-size: 2rem;
+  }
+
+  .aboutus-section p,
+  .mission-section p {
+    font-size: 1rem;
+    padding: 0 20px;
+  }
+
+  .team-card {
+    width: 220px;
+  }
+
+  .team-photo {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+/* Mobile Phones */
+@media (max-width: 768px) {
+  .aboutus-section,
+  .mission-section,
+  .team-section {
+    padding: 120px 15px;
+  }
+
+  .aboutus-section h1,
+  .mission-section h2,
+  .team-section h2 {
+    font-size: 1.8rem;
+  }
+
+  .aboutus-section p,
+  .mission-section p {
+    font-size: 0.95rem;
+  }
+
+  .team-cards {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .team-card {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .team-photo {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+/* Small Mobile Screens */
+@media (max-width: 480px) {
+  .aboutus-section h1,
+  .mission-section h2,
+  .team-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .aboutus-section p,
+  .mission-section p {
+    font-size: 0.9rem;
+  }
+
+  .team-card {
+    padding: 15px;
+  }
+
+  .team-photo {
+    width: 80px;
+    height: 80px;
+  }
+}

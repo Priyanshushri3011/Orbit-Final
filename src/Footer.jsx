@@ -20,8 +20,8 @@ function Footer() {
         {/* Contact Info */}
         <div className="footer-box">
           <h3>Contact Us</h3>
-          <p>Email: support@elearn.com</p>
-          <p>Phone: +91 98765 43210</p>
+          <p>Email: orbitclassespatna@elearn.com</p>
+          <p>Phone: +91 92634 57251</p>
           <div className="footer-social">
             <a href="#"><FaFacebookF /></a>
             <a href="#"><FaTwitter /></a>

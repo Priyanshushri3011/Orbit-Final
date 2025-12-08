@@ -1,9 +1,11 @@
 import React from "react";
 import "./Courses.css";
 import { Link } from "react-router-dom";
+import Navbar from "./Navbar";
 
 function Courses() {
   const courses = [
+    
     {
       link: '/foundationcourse',
       title: "Foundation Course",
@@ -44,6 +46,7 @@ function Courses() {
 
   return (
     <section className="course-section" id="courses">
+      <Navbar/>
       <h2 className="course-heading">Our Courses</h2>
 
       <div className="course-grid">
@@ -60,6 +63,7 @@ function Courses() {
         ))}
       </div>
     </section>
+    
   );
 }
 

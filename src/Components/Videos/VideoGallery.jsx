@@ -4,20 +4,20 @@ import "./VideoGallery.css";
 function VideoGallery() {
   const videos = [
     {
-      title: "Introduction to Physics",
-      url: "https://www.youtube.com/embed/ysz5S6PUM-U",
+      title: "Orbit Classes Patna : By - Adarsh Sir",
+      url: "https://www.youtube.com/embed/qbc_dpmW7lk",
     },
     {
-      title: "Class 11 Biology Basics",
-      url: "https://www.youtube.com/embed/fLexgOxsZu0",
+      title: "🎯 Our Video Content Plan – Your Thoughts Matter!",
+      url: "https://www.youtube.com/embed/QVVTBADO1pw",
     },
     {
-      title: "IIT-JEE Maths Tricks",
-      url: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      title: "📌 Quantisation of Charge - Class 10 &amp; Class 12 ",
+      url: "https://www.youtube.com/embed/au4UzN1C6K0",
     },
     {
-      title: "NEET Preparation Strategy",
-      url: "https://www.youtube.com/embed/3fumBcKC6RE",
+      title: "⚡ Method of Charging – Explained",
+      url: "https://www.youtube.com/embed/-uqFD2VMVHw",
     },
   ];
 

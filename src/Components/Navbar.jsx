@@ -2,6 +2,7 @@ import { useState } from "react";
 import { FaFacebookF, FaTwitter, FaInstagram, FaYoutube } from "react-icons/fa";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
+import Logo from "../assets/Logo.png"
 
 
 function Navbar() {
@@ -9,14 +10,23 @@ function Navbar() {
 
   return (
     <nav className="navbar">
-      <div className="logo"><img src="https://drive.google.com/file/d/1h8DlvcOrBIoFOs0MHj8rCyf6It19Z0R4/view?usp=sharing" alt="" /></div>
+      <div className="logo">
+        <img src={Logo} alt="logo" />
+      </div>
 
       <ul className={`nav-links ${menuOpen ? "open" : ""}`}>
         <li>
           <Link to="/">Home</Link>
         </li>
-        <li>About</li>
-        <li>All Courses</li>
+
+        <li>
+          <Link to="/aboutus">About</Link>
+        </li>
+
+        <li>
+          <Link to="/allcourses">Courses</Link>
+        </li>
+
         <li>Faculty</li>
         <li>Event</li>
         <li>Contact</li>

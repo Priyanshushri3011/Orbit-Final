@@ -10,11 +10,14 @@ import DropperBatch from './Components/AllCourses/DropperBatch'
 import NDATargetBatch from './Components/AllCourses/NDATargetBatch'
 import CrashCourse from './Components/AllCourses/CrashCourse'
 import TestSeries from './Components/AllCourses/TestSeries'
+import Events from './Components/Events/Events'
+import Courses from './Components/Courses'
 
 function Allroutes() {
   return (
     <Routes>
       <Route path='/' element={<Home/>} />
+      <Route path='/allcourses'element={<Courses/>}/>
       <Route path='/foundationcourse' element={<FoundationCourse />} />
       <Route path='/targetbatch' element={<TargetCourse />} />
       <Route path='/dropperbatchneet' element={<DropperBatchNEET/>}/>
@@ -23,6 +26,7 @@ function Allroutes() {
       <Route path= '/ndatargetbatch' element = {<NDATargetBatch/>}/>
       <Route path='/crashcourse' element = {<CrashCourse/>}/>
       <Route path='/testseries' element = {<TestSeries/>}/>
+      <Route path='/events' element = {<Events/>}/>
 
     </Routes>
   )

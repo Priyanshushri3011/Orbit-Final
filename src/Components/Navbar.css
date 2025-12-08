@@ -1,16 +1,24 @@
+/* ===== NAVBAR CONTAINER ===== */
 .navbar {
-  width: 100vw;
+  width: 100%;
   padding: 1rem 5%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  backdrop-filter: blur(1px);
-  background: rgba(255, 255, 255, 0.1);
   position: fixed;
-  left: 0;
   top: 0;
+  left: 0;
   z-index: 1000;
+
+  background: rgba(20, 20, 20, 0.55);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+
+  transition: all 0.3s ease;
 }
+
+/* ===== LOGO ===== */
 .logo img {
   height: 55px;
   width: auto;
@@ -18,74 +26,113 @@
   transition: transform 0.3s ease;
 }
 
+.logo img:hover {
+  transform: scale(1.05);
+}
+
+/* ===== NAV LINKS ===== */
 .nav-links {
   display: flex;
   list-style: none;
-  gap: 2rem;
+  gap: 2.2rem;
+  align-items: center;
   transition: all 0.3s ease-in-out;
 }
 
 .nav-links li {
   font-weight: 500;
-  color: var(--white);
+  color: #e6e6e6;
   cursor: pointer;
+  position: relative;
   transition: 0.3s;
+}
+
+/* Hover Underline Effect */
+.nav-links li::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background: var(--primary);
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  transition: width 0.3s ease;
 }
 
 .nav-links li:hover {
   color: var(--primary);
 }
 
+.nav-links li:hover::after {
+  width: 100%;
+}
+
+/* ===== RIGHT ICONS (Desktop) ===== */
 .header-right {
   display: flex;
-  gap: 1rem;
+  gap: 1.2rem;
+  align-items: center;
 }
 
 .header-right svg {
-  color: var(--white);
-  font-size: 1.2rem;
+  color: #ffffff;
+  font-size: 1.25rem;
   cursor: pointer;
-  transition: 0.3s;
+  transition: 0.3s ease;
 }
 
 .header-right svg:hover {
   color: var(--primary);
+  transform: scale(1.15);
 }
 
-/* Hamburger Icon */
+/* ===== HAMBURGER BUTTON ===== */
 .menu-button {
   display: none;
-  color: var(--white);
-  font-size: 1.8rem;
+  color: #ffffff;
+  font-size: 2rem;
   cursor: pointer;
-  z-index: 1100;
+  z-index: 1500;
 }
 
+/* ===== MOBILE NAVIGATION ===== */
 @media (max-width: 768px) {
   .nav-links {
     position: absolute;
-    top: 93px;
+    top: 85px;
+    left: 0;
     width: 100%;
-    right: 0;
     flex-direction: column;
-    background: rgba(157, 229, 240, 0.178);
+
+    background: rgba(15, 15, 20, 0.92);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+
     padding: 2rem 0;
-    align-items: center;
-    gap: 1.5rem;
-    display: none;
+    gap: 1.8rem;
+
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-20px);
+    transition: all 0.35s ease;
   }
 
+  /* When menu is open */
   .nav-links.open {
-    display: flex;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+
+  .nav-links li {
+    font-size: 1.1rem;
   }
 
   .menu-button {
     display: block;
   }
 
+  /* Hide right icons on mobile */
   .header-right {
     display: none;
   }
 }
-
-
