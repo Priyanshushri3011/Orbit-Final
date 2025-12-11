@@ -1,7 +1,7 @@
 /* ===== NAVBAR CONTAINER ===== */
 .navbar {
   width: 100%;
-  padding: 1rem 5%;
+  padding: 0.5rem 5%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -116,7 +116,6 @@
     transition: all 0.35s ease;
   }
 
-  /* When menu is open */
   .nav-links.open {
     opacity: 1;
     visibility: visible;
@@ -131,8 +130,35 @@
     display: block;
   }
 
-  /* Hide right icons on mobile */
   .header-right {
     display: none;
   }
+}
+
+/* ====== FIX: MAKE LINK TAG WHITE & REMOVE PURPLE UNDERLINE ====== */
+.navbar a {
+  color: #e6e6e6 !important;
+  text-decoration: none !important;
+  position: relative;
+}
+
+/* Hover color same as <li> hover */
+.navbar a:hover {
+  color: var(--primary) !important;
+}
+
+/* Give <Link> same underline hover effect */
+.navbar a::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background: var(--primary);
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  transition: 0.3s ease;
+}
+
+.navbar a:hover::after {
+  width: 100%;
 }

@@ -8,14 +8,13 @@ const AboutUs = () => {
     return (
         <>
             <Navbar />
-
             {/* 1️⃣ About Us Section */}
             <section className="aboutus-section">
                 <div className="container">
                     <h1>About Us</h1>
                     <p>
-                        <strong>OrbitClasses</strong> is a premier educational institute committed to delivering high-quality academic coaching and skill development. 
-                        We focus on structured learning, expert guidance, and practical knowledge to empower students to achieve both academic and professional excellence. 
+                        <strong>OrbitClasses</strong> is a premier educational institute committed to delivering high-quality academic coaching and skill development.
+                        We focus on structured learning, expert guidance, and practical knowledge to empower students to achieve both academic and professional excellence.
                         Our comprehensive curriculum, experienced faculty, and student-centric approach nurture talent and foster success in every learner.
                     </p>
                 </div>

@@ -1,7 +1,7 @@
 import React from "react";
-import "./AboutContactSection.css";
+import "./ContactUs.css";
 
-function AboutContactSection() {
+function ContactUs() {
   return (
     <section className="about-contact">
       <div className="contact-image">
@@ -15,11 +15,11 @@ function AboutContactSection() {
           <input type="email" placeholder="Your Email" required />
           <input type="number" placeholder="Your Number" required />
           <textarea rows="4" placeholder="Your Message" required></textarea>
-          <button type="submit">Send Message</button>
+          <button className="submitbutton" type="submit">Send Message</button>
         </form>
       </div>
     </section>
   );
 }
-
-export default AboutContactSection;
+  
+export default ContactUs;

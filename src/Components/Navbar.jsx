@@ -20,7 +20,7 @@ function Navbar() {
         </li>
 
         <li>
-          <Link to="/aboutus">About</Link>
+          <Link to="/aboutus">AboutUs</Link>
         </li>
 
         <li>

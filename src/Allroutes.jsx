@@ -11,13 +11,15 @@ import NDATargetBatch from './Components/AllCourses/NDATargetBatch'
 import CrashCourse from './Components/AllCourses/CrashCourse'
 import TestSeries from './Components/AllCourses/TestSeries'
 import Events from './Components/Events/Events'
-import Courses from './Components/Courses'
+import CoursesAll from './Components/CoursesAll'
+import AboutusPage from './Components/AboutusPage'
 
 function Allroutes() {
   return (
     <Routes>
       <Route path='/' element={<Home/>} />
-      <Route path='/allcourses'element={<Courses/>}/>
+      <Route path='/allcourses'element={<CoursesAll/>}/>
+      <Route path='/aboutus' element={<AboutusPage/>}/>
       <Route path='/foundationcourse' element={<FoundationCourse />} />
       <Route path='/targetbatch' element={<TargetCourse />} />
       <Route path='/dropperbatchneet' element={<DropperBatchNEET/>}/>

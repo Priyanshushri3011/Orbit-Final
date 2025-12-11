@@ -1,5 +1,4 @@
 import WhyOrbitClasses from "./Components/Whyorbitclasses";
-import AboutContactSection from "./Components/AboutContactSection";
 import Courses from "./Components/Courses";
 import Faculty from "./Components/Faculty/Faculty";
 import Hero from "./Components/Hero";
@@ -9,7 +8,7 @@ import Footer from "./Footer";
 import "./index.css";
 import "./Home.css"
 import Events from "./Components/Events/Events";
-import AboutUs from "./Aboutus/Aboutus";
+import ContactUs from "./Components/ContactUs";
 
 function Home() {
   return (
@@ -21,9 +20,8 @@ function Home() {
       <Faculty/>
       <VideoGallery/>
       <Events/>
-      <AboutContactSection/>
+      <ContactUs/>
       <Footer/>
-      {/* <AboutUs/> */}
     </>
   );
 }

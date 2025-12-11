@@ -132,27 +132,58 @@ textarea {
   min-height: 100px;
 }
 
-/* 💫 Submit Button */
+/* 💫 Submit Button — UPDATED */
 .contact-btn {
-  margin-top: 0.5rem;
+  width: 100%;
+  margin-top: 1rem;
   background: linear-gradient(90deg, #00ffc8, #00bfff);
   color: #000;
-  font-weight: 700;
-  padding: 0.9rem 1.5rem;
+  font-weight: 800;
+  padding: 1rem;
   border: none;
-  border-radius: 8px;
+  border-radius: 10px;
   cursor: pointer;
-  letter-spacing: 0.6px;
-  transition: all 0.4s ease;
+  letter-spacing: 0.8px;
+  font-size: 1.1rem;
   text-transform: uppercase;
-  box-shadow: 0 5px 15px rgba(0, 255, 200, 0.25);
+  transition: all 0.35s ease;
+  box-shadow: 0 6px 18px rgba(0, 255, 200, 0.25);
 }
 
 .contact-btn:hover {
   background: linear-gradient(90deg, #00bfff, #00ffc8);
-  transform: scale(1.05);
-  box-shadow: 0 10px 25px rgba(0, 255, 200, 0.4);
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px rgba(0, 255, 200, 0.45);
 }
+
+.submitbutton {
+  background: var(--primary);
+  color: #ffffff;
+  padding: 12px 26px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600; /* Bold */
+  cursor: pointer;
+  transition: all 0.3s ease;
+  letter-spacing: 0.5px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.25);
+}
+
+/* Hover Effect */
+.submitbutton:hover {
+  background: #ffffff;
+  color: var(--primary);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35);
+}
+
+/* Active Click Effect */
+.submitbutton:active {
+  transform: translateY(0);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
 
 /* 📱 Responsive Design */
 @media (max-width: 992px) {
