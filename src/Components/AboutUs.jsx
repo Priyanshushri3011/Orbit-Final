@@ -1,7 +1,7 @@
 import React from "react";
 import "./AboutUs.css"; // About Us specific styles
 import Navbar from "../Components/Navbar";
-import Faculty from "../Components/Faculty/Faculty";
+import Faculty from "./Faculty/Faculty";
 import Footer from "../Footer";
 
 const AboutUs = () => {
@@ -65,8 +65,6 @@ const AboutUs = () => {
 
             {/* Faculty Section */}
             <Faculty />
-
-            {/* Footer */}
             <Footer />
         </>
     );

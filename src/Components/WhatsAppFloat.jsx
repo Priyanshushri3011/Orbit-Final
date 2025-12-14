@@ -47,10 +47,8 @@ const styles = {
     alignItems: "center",
     color: "#fff",
     cursor: "pointer",
-
     border: "2px solid rgba(255, 255, 255, 0.3)",
     backdropFilter: "blur(5px)",
-
     transition: "all 0.3s ease",
   },
 };

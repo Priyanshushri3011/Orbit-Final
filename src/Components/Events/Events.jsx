@@ -9,27 +9,27 @@ import event4 from "./event4.jpg"
 const Events = () => {
   const events = [
     {
-      title: "Motivational Seminar",
-      description:
-        "A power-packed session to inspire students for competitive exam success.",
+      // title: "Motivational Seminar",
+      // description:
+      //   "A power-packed session to inspire students for competitive exam success.",
       image: event1,
     },
     {
-      title: "Topper Felicitation Program",
-      description:
-        "Honoring our brilliant achievers for their outstanding performance.",
+      // title: "Topper Felicitation Program",
+      // description:
+      //   "Honoring our brilliant achievers for their outstanding performance.",
       image:event2,
     },
     {
-      title: "Career Guidance Workshop",
-      description:
-        "Experts guiding students on NEET, JEE, and NDA career pathways.",
+      // title: "Career Guidance Workshop",
+      // description:
+      //   "Experts guiding students on NEET, JEE, and NDA career pathways.",
       image: event3,
     },
     {
-      title: "Parent-Teacher Interaction",
-      description:
-        "Discussing student progress and performance strategies.",
+      // title: "Parent-Teacher Interaction",
+      // description:
+      //   "Discussing student progress and performance strategies.",
       image:event4,
     },
   ];

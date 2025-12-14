@@ -20,23 +20,34 @@ function Navbar() {
         </li>
 
         <li>
-          <Link to="/aboutus">AboutUs</Link>
+          <Link to="/aboutus">About</Link>
         </li>
 
         <li>
           <Link to="/allcourses">Courses</Link>
         </li>
 
-        <li>Faculty</li>
+        <li>
+          <Link to="/faculty">Faculty</Link>
+        </li>
         <li>Event</li>
-        <li>Contact</li>
+        <li>
+          <Link to="/contactus">Contact</Link>
+        </li>
       </ul>
 
       <div className="header-right">
         <FaFacebookF />
         <FaInstagram />
         <FaTwitter />
-        <FaYoutube />
+        <a
+          href="https://www.youtube.com/@Orbitclassespatna"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaYoutube />
+        </a>
+
       </div>
 
       {/* Hamburger Icon */}

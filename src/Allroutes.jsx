@@ -2,7 +2,6 @@ import React from 'react'
 import { Route, Routes } from 'react-router-dom'
 import FoundationCourse from './Components/AllCourses/FoundationCourse'
 import TargetCourse from './Components/AllCourses/TargetCourse'
-
 import Home from './Home'
 import DropperBatchNEET from './Components/AllCourses/DropperBatchNEET'
 import DropperBatchJEE from './Components/AllCourses/DropperBatchJEE'
@@ -13,13 +12,17 @@ import TestSeries from './Components/AllCourses/TestSeries'
 import Events from './Components/Events/Events'
 import CoursesAll from './Components/CoursesAll'
 import AboutusPage from './Components/AboutusPage'
+import ContactusPage from './Components/ContactusPage'
+import FacultyPage from './Components/FacultyPage'
 
 function Allroutes() {
   return (
     <Routes>
       <Route path='/' element={<Home/>} />
       <Route path='/allcourses'element={<CoursesAll/>}/>
-      <Route path='/aboutus' element={<AboutusPage/>}/>
+      <Route path='/aboutus' element ={<AboutusPage/>}/>
+      <Route path='/faculty' element = {<FacultyPage/>}/>
+      <Route path='/contactus' element ={<ContactusPage/>}/>
       <Route path='/foundationcourse' element={<FoundationCourse />} />
       <Route path='/targetbatch' element={<TargetCourse />} />
       <Route path='/dropperbatchneet' element={<DropperBatchNEET/>}/>

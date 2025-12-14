@@ -12,7 +12,7 @@ function Footer() {
           <ul>
             <li><a href="#">Home</a></li>
             <li><a href="#courses">Courses</a></li>
-            <li><a href="#">About Us</a></li>
+            <li><a href="#AboutUs">About</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
@@ -20,7 +20,7 @@ function Footer() {
         {/* Contact Info */}
         <div className="footer-box">
           <h3>Contact Us</h3>
-          <p>Email: orbitclassespatna@elearn.com</p>
+          <p>Email: orbitclassespatna@gmail.com</p>
           <p>Phone: +91 92634 57251</p>
           <div className="footer-social">
             <a href="#"><FaFacebookF /></a>

@@ -1,5 +1,5 @@
 import React from 'react'
-import AboutUs from './Aboutus/AboutUs'
+import AboutUs from './AboutUs'
 
 function AboutusPage  () {
   return (

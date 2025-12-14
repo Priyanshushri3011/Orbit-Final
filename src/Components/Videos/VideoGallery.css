@@ -1,11 +1,12 @@
 .video-gallery {
   padding: 4rem 5%;
   background: #16193A;
-  background: linear-gradient(180deg,rgba(22, 25, 58, 1) 5%, rgba(0, 0, 0, 1) 100%);
+  background: linear-gradient(180deg, rgba(22, 25, 58, 1) 5%, rgba(0, 0, 0, 1) 100%);
   color: #fff;
   text-align: center;
 }
 
+/* Heading */
 .video-gallery h2 {
   font-size: 2rem;
   font-weight: 700;
@@ -13,7 +14,13 @@
   color: var(--primary, #00ffc8);
 }
 
-/* Container */
+/* --- SCROLL WRAPPER FOR BUTTONS --- */
+.scroll-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+/* --- Desktop Grid --- */
 .video-scroll-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -40,7 +47,7 @@
 /* Responsive iframe wrapper */
 .video-wrapper {
   position: relative;
-  padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+  padding-bottom: 56.25%;
   height: 0;
   overflow: hidden;
 }
@@ -63,7 +70,43 @@
   color: #fff;
 }
 
-/* Mobile Responsive Layout */
+/* ===== Scroll Buttons ===== */
+.scroll-btn {
+  position: absolute;
+  top: 45%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.15);
+  color: #00ffc8;
+  font-size: 32px;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s ease;
+  backdrop-filter: blur(6px);
+  z-index: 20;
+}
+
+.scroll-btn:hover {
+  background: rgba(0, 255, 200, 0.25);
+}
+
+.scroll-btn.left {
+  left: -15px;
+}
+
+.scroll-btn.right {
+  right: -15px;
+}
+
+/* Hide buttons on smaller screens */
+@media (max-width: 768px) {
+  .scroll-btn {
+    display: none;
+  }
+}
+
+/* ===== Mobile Horizontal Scroll Layout ===== */
 @media (max-width: 768px) {
   .video-scroll-container {
     display: flex;

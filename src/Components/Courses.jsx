@@ -13,31 +13,31 @@ function Courses() {
         "Strengthen your basics for Class 11th & 12th with in-depth conceptual learning and regular assessments.",
     },
     {
-        link: './targetbatch',
+        link: '/targetbatch',
       title: "Target Board Exams",
       description:
         "Master your board syllabus with focused preparation, revision classes, and expert guidance.",
     },
     {
-      link: './dropperbatch',
+      link: '/dropperbatch',
       title: "Dropper Batch for NEET & JEE",
       description:
         "Specialized batch for NEET & JEE droppers focusing on speed, accuracy, and exam-oriented strategy.",
     },
     {
-      link: './ndatargetbatch',
+      link: '/ndatargetbatch',
       title: "Target Batch for NDA",
       description:
         "Focused preparation for NDA aspirants with academic and personality development support.",
     },
     {
-      link:'./crashcourse',
+      link:'/crashcourse',
       title: "Crash Course",
       description:
         "Fast-track revision course with intensive practice sessions and short-cut techniques.",
     },
     {
-      link:'./testseries',
+      link:'/testseries',
       title: "Test Series",
       description:
         "Regular tests, performance analysis, and personalized feedback to boost confidence and accuracy.",
@@ -46,9 +46,7 @@ function Courses() {
 
   return (
     <section className="course-section" id="courses">
-      <Navbar/>
       <h2 className="course-heading">Our Courses</h2>
-
       <div className="course-grid">
         {courses.map((course, index) => (
           <div className="course-card" key={index}>

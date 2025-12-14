@@ -1,28 +1,31 @@
 import React from "react";
 import "./Faculty.css";
-import pic from "../Faculty/Image/Biofaculty.jpg"
+import Biofaculty from "../Faculty/Image/Biofaculty.jpg"
+import Physicsfaculty from "../Faculty/Image/Physicsfaculty.jpg"
+import Chemfaculty from "../Faculty/Image/Chemfaculty.jpg"
 
 function Faculty() {
     const team = [
         {
-            name: "Mr. Adarsh Srivastava",
-            role: "Physics Faculty",
-            img: "https://via.placeholder.com/300x300.png?text=Chemistry+Faculty"
+                name: "Mr. Adarsh Srivastava",
+                role: "Physics Faculty",
+                img: Physicsfaculty,
+                
         },
         {
             name: "Mr. V. K Gupta",
             role: "Chemistry Faculty",
-            img: "",
+            img: Chemfaculty,
         },
         {
             name: "Mr. Tahsheen Raza",
             role: "Biology Faculty",
-            img: "https://via.placeholder.com/300x300.png?text=Mathematics+Faculty",
+            img: Biofaculty,
         },
         {
             name: "Mr.",
             role: "Mathematics Faculty",
-            img:pic,
+            img:"https://via.placeholder.com/300x300.png?text=Mathematics+Faculty",
         },
     ];
 
