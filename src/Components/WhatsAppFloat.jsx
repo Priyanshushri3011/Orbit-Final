@@ -6,7 +6,7 @@ function WhatsAppFloat() {
 
   return (
     <a
-      href="https://wa.me/7765855895?text=Hello%20OrbitClasses%20Team%2C%20I%20Need%20Help"
+      href="https://wa.me/9263457251?text=Hello%20OrbitClasses%20Team%2C%20I%20Need%20Help"
       target="_blank"
       rel="noopener noreferrer"
       style={styles.container}
