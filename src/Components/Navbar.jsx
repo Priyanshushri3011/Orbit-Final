@@ -2,7 +2,7 @@ import { useState } from "react";
 import { FaFacebookF, FaTwitter, FaInstagram, FaYoutube } from "react-icons/fa";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
-import Logo from "../assets/Logo.png"
+import Logo from "../assets/logo.png"
 
 
 function Navbar() {
